@@ -1,0 +1,22 @@
+.btn-1{
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.btn-2{
+    border-radius: 30px;
+    height: 50px;
+    background-color: rgb(146, 4, 4);
+    color: white;
+}
+.main-navbar{
+    background-color: black !important;
+  /* color: white !important; */
+  /* display: flex !important;
+  justify-content: center !important; */
+}
+.salt{
+    
+}
