@@ -45,38 +45,80 @@
 // var city_name = prompt('Enter the current city name');
 // if (city_name == karachi) {
 // }
-for(let i=1; i<=100; i++){
-    console.log(i);
-}
-var stars = '';
-for(var i = ""; i<10; i++){
-    stars = stars+ '*';
-    console.log(stars);
-}
-var stars = 'Muttahar ';
-for(var i = ""; i<=10; i++){
-    stars = stars+ 'Sheikh ';
-    console.log(stars);
-}
-var tableNum = prompt('Enter table number');
-for(var i = 1; i<10; i++){
-    console.log(`${tableNum} x ${i} is = ${tableNum * i}`);
-}
-let weekDays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-for(var i = 0; i<10; i++){
-    console.log(weekDays[i]);
+// for(let i=1; i<=100; i++){
+//     console.log(i);
 // }
-var cities = ['karachi', 'Islambad', 'Quetta', 'peshawar', 'lahore'];
-var userinput = prompt('Enter city name');
-var isFound = false;
-for (var i = 0; i < cities.length; i++) {
-    if (userinput === cities[i]) {
-        console.log(`City found ${userinput}`);
-        isFound = true;
-        break;
-    }
+// var stars = '';
+// for(var i = ""; i<10; i++){
+//     stars = stars+ '*';
+//     console.log(stars);
+// }
+// var stars = 'Muttahar ';
+// for(var i = ""; i<=10; i++){
+//     stars = stars+ 'Sheikh ';
+//     console.log(stars);
+// }
+// var tableNum = prompt('Enter table number');
+// for(var i = 1; i<10; i++){
+//     console.log(`${tableNum} x ${i} is = ${tableNum * i}`);
+// }
+// let weekDays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+// for(var i = 0; i<10; i++){
+//     console.log(weekDays[i]);
+//  }
 
+
+
+ 
+// var cities = ['karachi', 'Islambad', 'Quetta', 'peshawar', 'lahore'];
+// var userinput = prompt('Enter city name');
+// var isFound = false;
+// for (var i = 0; i < cities.length; i++) {
+//     if (userinput === cities[i]) {
+//         console.log(`City found ${userinput}`);
+//         isFound = true;
+//         break;
+//     }
+
+// }
+// if (isFound === false) {
+//     console.log(`Not found`);
+// }
+
+
+var nam = prompt('Enter name to check is it palendrome');
+var isitpalendrome = true;
+
+for (let i = 0; i < nam.length; i++) {
+    var start = nam[i];
+    var end = nam[(nam.length-1) - i]
+
+ if (start != end) {
+    isitpalendrome = false;
+ }
 }
-if (isFound === false) {
-    console.log(`Not found`);
+if (isitpalendrome) {
+    alert('This is palendrome')
+}else{
+    alert('This is not palendrome')
+}
+
+for (let i = 1; i <= 10; i++) {
+    console.log( i , 10-i)
+    
+}
+// var strarr = 'hello'.split
+
+var buffet = ['qourma','biryani','karahi','gol gappay'];
+let userinput = prompt('Enter item name');
+let isitavail = false
+for(var i = 0; i<buffet.length; i++){
+    if (buffet[i] === userinput) {
+        isitavail=true;
+    }
+}
+if(isitavail){
+    document.write('It is available')
+} else {
+    document.write('It is not available')
 }
