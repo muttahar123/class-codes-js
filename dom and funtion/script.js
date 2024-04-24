@@ -1,32 +1,33 @@
-//learing funtion
-function sayhello(){
-    console.log('Hello bhai jan kia haal chaal');
-}
+var round_input = document.getElementById('round_of');
+var round_result = document.getElementById('round_result');
+var random_result = document.getElementById('random_result');
 
-sayhello()
-//-------*---------*--------//
-
-
-var h1 = document.getElementById('heading');
-console.log(h1);
-console.log(h1.innerHTML);
-
-
-var p = document.getElementById('para')
-function showMore (){
-    p.innerHTML='Lorem ipsum dolor sit amet consectetur....adipisicing elit. Atque quo necessitatibus assumenda quas eveniet labore? Quo exercitationem placeat deserunt culpa aliquid quod quas aliquam, ab maiores quidem reiciendis temporibus porro.Lorem ipsum dolor sit amet consectetur....adipisicing elit. Atque quo necessitatibus assumenda quas eveniet labore? Quo exercitationem placeat deserunt culpa aliquid quod quas aliquam, ab maiores quidem reiciendis temporibus porro.'
-    
-}
-function showLess (){
-    p.innerHTML='Lorem ipsum dolor sit amet consectetur....'
+function round() {
+    var roundResult = Math.round(round_input.value)
+    round_result.innerText = '>>=' +roundResult
 }
 
 
-var number = document.getElementById('number')
-var count = 1
-function increment() {
-    number.innerHTML=count++
-} 
-function decrement() {
-    number.innerHTML=count--
-} 
+function generateRandomNumber() {
+    var randomNumber = Math.random() 
+    var randomOnlyTwo = Math.ceil(randomNumber*100)
+    random_result.innerText ='>>=' + randomOnlyTwo
+
+}
+
+
+var ceil_of = document.getElementById('ceil_of');
+var ceil_Result = document.getElementById('ceil_Result');
+function ceil(){
+    var ceilOf = Math.ceil(ceil_of.value)
+    ceil_Result.innerText= '>>=' +ceilOf
+}
+
+
+
+var floor_of = document.getElementById('floor_of');
+var floor_result = document.getElementById('floor_result');
+function floor(){
+    var floorOf = Math.floor(floor_of.value)
+    floor_result.innerHTML='>>=' + floorOf
+}
