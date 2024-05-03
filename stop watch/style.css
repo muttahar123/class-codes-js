@@ -1,0 +1,58 @@
+.btns{
+    display: flex;
+}
+
+.main{
+    margin: 0px auto;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background: #2C3E4C;
+}
+
+button{
+    width: 13%;
+    padding-bottom: 1.75%;
+    padding-top: 1.75%;
+    background-color: #48667c;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 6%;
+    margin-right: 1.5%;
+    border-style: none;
+    box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: 0.45s;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+button:active{
+    opacity: 0.1;
+}
+
+#btn-start{
+    margin-left: 28%;
+}
+
+#time li{
+    color: white;
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    font-size: 450%;
+    font-family: 'Jura', sans-serif;
+    margin-left: 50px;
+}
+
+ul{
+    padding-left: 33.5%;
+    margin-top: 6%;
+}
