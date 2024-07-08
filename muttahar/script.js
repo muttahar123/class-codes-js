@@ -1,14 +1,27 @@
-// var username = prompt('Enter your name');
-// if (username.length <= 3) {
-//     alert('Enter valid name')
-// }else if (username.length>=9) {
-//     alert('Apni aukaat meh rahen')
-// }else{
-//     alert('Shukeriya!!')
-// }
+// function fe
 
-var strng = 'Muttahar is a good boy but naughty naughty bacha mast malang hai..!';
-for (let i = 0; i < strng.length; i++) {
-   console.log(strng.indexOf('a'));
-    break;
+
+let main_container = document.getElementById("main_container");
+
+const fetchApiData = async ()=> {
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+        console.log(data);
+      for(let key of data) {
+        main_container.innerHTML += `
+        <div>
+        <p><strong>Name : </strong>${key.name}</p>
+        <p><strong>Email : </strong>${key.email}</p>
+        <p><strong>UserName : </strong>${key.username}</p>
+        <p><strong>Phone : </strong>${key.phone}</p>
+    </div>`
+      }
+    }catch (err){
+        console.log("error==>" , err);
+    }
+    
 }
+
+fetchApiData();
+
