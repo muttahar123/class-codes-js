@@ -1,0 +1,27 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+button:hover{
+   background-color: azure;
+   transform: 2s;
+   transition: 0.5s;
+}
+
+body{
+    background-color: antiquewhite;
+}
